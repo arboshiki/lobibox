@@ -1446,6 +1446,7 @@ var Lobibox = Lobibox || {};
             me.$el = $notify;
             if (me.$options.sound) {
                 var snd = new Audio(me.$options.sound); // buffers automatically when created
+				snd.volume = me.$options.volume;
                 snd.play();
             }
             if (me.$options.rounded) {
@@ -1505,6 +1506,7 @@ var Lobibox = Lobibox || {};
         closeOnClick: true,         // Close notifications by clicking on them
         width: 400,                 // Width of notification box
         sound: true,                // Sound of notification. Set this false to disable sound. Leave as is for default sound or set custom soud path
+		volume: 1,
         // Place to show notification. Available options: "top left", "top right", "bottom left", "bottom right", "center top", "center bottom"
         // It can also be object {left: number, top: number} to position notification at any place
         position: "bottom right",
