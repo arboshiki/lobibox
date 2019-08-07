@@ -33,6 +33,7 @@ Responsive jQuery notification plugin written from scratch.
 *   Show delay indicator
 *   Show with image
 *   Sound support
+*   Volume control support
 *   Size support. You can show notifications of different size
 
 ### Installation and dependecies
